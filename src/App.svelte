@@ -2,12 +2,17 @@
 	let random_player;
 	const api_key = "AIzaSyCqxgY4My0qkNzDrnt0cdg7UhfDvZSZFow";
 	const creed_channel = "UCP-tFf_VMQzhyeKMONL1KvQ";
+	const other = "UCkAtRAlTAV9SEn3P9pbAUHg";
+	let channel_id = creed_channel;
+	if (Math.random() < 0.01) {
+		channel_id = other;
+	}
 	let videos = [];
 
 	let last_video_id = "";
 
 	const res = fetch(
-		`https://www.googleapis.com/youtube/v3/search?part=id&channelId=${creed_channel}&maxResults=50&order=date&key=${api_key}`
+		`https://www.googleapis.com/youtube/v3/search?part=id&channelId=${channel_id}&maxResults=50&order=date&key=${api_key}`
 	);
 	res.then((response) => {
 		response
@@ -25,6 +30,9 @@
 				console.error("Unable to get videos from Youtube API! Defaulting to backup video list.");
 				console.error(err);
 				console.error(response);
+				if (Math.random() < 0.01) {
+					videos = ["r1tNmN-tXHk", "4eSXot_cvHk", "KmtMl_zr7nI", "qnbwk5muoBo", "no0s3d04bLI", "geMhBZGuM", "3SLZ7RX6FPM"]
+				}
 				videos = ["qnkuBUAwfe0", "J16lInLZRms", "9RZXaoaK8NI", "eX3ZSlKdsrM", "iBBqjGd3fHQ", "wu0VRsVCQ48", "oPzhUp8mWgs", "CFLXxqoapPY", "erFoLBcNyKI", "3k3jxi4JhXA"];
 			})
 			.then(() => newSong());
