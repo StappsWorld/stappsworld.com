@@ -1,0 +1,73 @@
+<template>
+    <div class="title_card">
+      <div class="title_card_upper_space"></div>
+      <div class="title_card_name">
+        <transition name="title_text" appear>
+            <h1>Samuel Rembisz</h1>
+        </transition>
+      </div>
+      <div class="title_card_lower_space">
+        <transition name="title_text" appear>
+          <p>Software Engineer</p>
+        </transition>
+      </div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'title_card',
+}
+</script>
+
+<style scoped>
+.title_text-enter-from {
+  opacity: 0;
+}
+
+.title_text-enter-active {
+  transition: all 1.5s ease;
+}
+
+.title_card {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  background: url("../assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title_card_upper_space {
+  height: 60%;
+  background-color: var(--transparent-background);
+}
+
+.title_card_name {
+  height: 15%;
+  background-color: var(--transparent-background);
+}
+
+.title_card_name h1 {
+  padding: 0px;
+  margin: 0px 10px 0px var(--spacing-from-left);
+  color: white;
+  font-family: "Monospace";
+  font-size: 14vh;
+}
+
+.title_card_lower_space {
+  height: 25%;
+  background-color: var(--solid-background);
+}
+
+.title_card_lower_space p {
+  padding: 0px;
+  margin: 0px 10px 0px var(--spacing-from-left);
+  color: white;
+  font-family: "Monospace";
+  font-size: 6vh;
+}
+
+</style>
