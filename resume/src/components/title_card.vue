@@ -1,23 +1,23 @@
 <template>
-    <div class="title_card">
-      <div class="title_card_upper_space"></div>
-      <div class="title_card_name">
-        <transition name="title_text" appear>
-            <h1>Samuel Rembisz</h1>
-        </transition>
-      </div>
-      <div class="title_card_lower_space">
-        <transition name="title_text" appear>
-          <p>Software Engineer</p>
-        </transition>
-      </div>
+  <div class="title_card">
+    <div class="title_card_upper_space"></div>
+    <div class="title_card_name">
+      <transition name="title_text" appear>
+        <h1 data-aos="fade-right">Samuel Rembisz</h1>
+      </transition>
     </div>
+    <div class="title_card_lower_space">
+      <transition name="title_text" appear>
+        <p data-aos="fade-right">Software Engineer</p>
+      </transition>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'title_card',
-}
+  name: "title_card",
+};
 </script>
 
 <style scoped>
@@ -26,7 +26,7 @@ export default {
 }
 
 .title_text-enter-active {
-  transition: all 1.5s ease;
+  transition: all var(--main-transition-time) ease;
 }
 
 .title_card {
@@ -36,7 +36,8 @@ export default {
   margin: 0px 0px 0px 0px;
   background: url("../assets/background.jpeg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .title_card_upper_space {
@@ -45,29 +46,28 @@ export default {
 }
 
 .title_card_name {
-  height: 15%;
+  height: 20%;
   background-color: var(--transparent-background);
 }
 
 .title_card_name h1 {
-  padding: 0px;
+  padding: 10px;
   margin: 0px 10px 0px var(--spacing-from-left);
   color: white;
   font-family: "Monospace";
-  font-size: 14vh;
+  font-size: 7.5vw;
 }
 
 .title_card_lower_space {
-  height: 25%;
+  height: 20%;
   background-color: var(--solid-background);
 }
 
 .title_card_lower_space p {
-  padding: 0px;
+  padding: 10px;
   margin: 0px 10px 0px var(--spacing-from-left);
   color: white;
   font-family: "Monospace";
-  font-size: 6vh;
+  font-size: 5vw;
 }
-
 </style>
