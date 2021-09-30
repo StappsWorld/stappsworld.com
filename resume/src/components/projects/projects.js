@@ -1,15 +1,5 @@
 
-export interface Project {
-    name: String,
-    url: String,
-    tools: String[],
-    description: String,
-    loc: number,
-    time_started: Date,
-    time_ended: Date,
-}
-
-export const projects: Project[] = [
+export const proj_arr = [
     {
         name: "BRShtop",
         url: "https://github.com/StappsWorld/brshtop",

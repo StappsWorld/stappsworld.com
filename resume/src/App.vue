@@ -5,7 +5,9 @@
   <transition name="about_me_card" appear>
     <about_me></about_me>  
   </transition>
-  <projects></projects>
+  <transition name="projects_card" appear>
+    <projects></projects>
+  </transition>
 </template>
 
 <script>
@@ -52,6 +54,14 @@ export default {
   }
 
   .about_me_card-enter-active {
+    transition: all var(--outer-transition-time) ease;
+  }
+
+  .projects_card-enter-from {
+    opacity: 0;
+  }
+
+  .projects_card-enter-active {
     transition: all var(--outer-transition-time) ease;
   }
 </style>
