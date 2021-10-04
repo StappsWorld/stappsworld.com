@@ -1,10 +1,10 @@
 <template>
-  <div class="project_root">
+  <div class="projects_root">
     <div class="projects_empty_space"></div>
     <transition name="projects" appear>
       <div data-aos="fade-up" class="cards_with_title">
         <div style="width: 100%; text-align: center">
-          <h1>Projects:</h1>
+          <h1>Recent Projects:</h1>
         </div>
         <div class="project_cards">
           <div
@@ -48,7 +48,7 @@
         </div>
       </div>
     </transition>
-    <div class="projects_empty_space"></div>
+    <!-- <div class="projects_empty_space"></div> -->
   </div>
 </template>
 
@@ -81,11 +81,8 @@ export default {
   transition: all var(--main-transition-time) ease;
 }
 
-.project_root {
-  background-image: linear-gradient(
-    var(--solid-background-soft) 0%,
-    var(--solid-background) 100%
-  );
+.projects_root {
+  background-color: var(--solid-background);
   height: 100vh;
 }
 

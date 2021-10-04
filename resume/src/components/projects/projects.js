@@ -13,7 +13,7 @@ export const proj_arr = [
         name: "YALAL",
         url: "https://github.com/StappsWorld/YALAL",
         tools: ["rust"],
-        description: "<u><strong>A simple linear algebra library</strong></u> written in Rust with N dimensional vectors and matrices.",
+        description: "<u><strong>A simple linear algebra library</strong></u> written in Rust with N dimensional vectors and matrices. Included with the library is unit testing to verify the library is working correctly. This is my first real library, and its topic is one that I enjoy a lot.",
         loc: 3000,
         time_started: new Date('August 1, 2021 00:00:00'),
         time_ended: null,
@@ -39,7 +39,7 @@ export const proj_arr = [
     {
         name: "RHS Mesial Dashboard",
         url: "https://github.com/Riverbend-High-School/rhs-mesial-dashboard",
-        tools: ["vue"],
+        tools: ["vue", "html", "js"],
         description: "<u><strong>The frontend of the RHS Mesial Project.</u></strong>. This project was written in Vue and displayed information requested from the RHS Mesial API such as the current block, current events, and even special notifications.",
         loc: 1000,
         time_started: new Date('September 1, 2021 00:00:00'),
