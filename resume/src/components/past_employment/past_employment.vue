@@ -18,7 +18,7 @@
               <div class="work_left">
                 <div class="name">
                   <p>
-                    <a v-bind:href="employment.url">{{ employment.name }}</a>
+                    <a v-bind:href="employment.url" target="_blank">{{ employment.name }}</a>
                   </p>
                 </div>
                 <div class="date">

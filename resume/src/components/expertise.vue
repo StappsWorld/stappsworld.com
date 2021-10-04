@@ -49,7 +49,7 @@
                     width="32"
                     height="32"
                   />
-                  C - <i class="text-muted">7/2021</i>
+                  C - <i class="text-muted">4/2021</i>
                 </p>
               </li>
               <li>
