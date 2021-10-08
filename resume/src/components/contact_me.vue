@@ -99,7 +99,7 @@ export default {
 }
 
 .contact_me_upper {
-  width: 100vw;
+  width: 100%;
   height: 68vh;
   padding: 0px;
   margin: 0px;
