@@ -21,6 +21,18 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (max-width: 800px) {
+  .title_card {
+    height: 25%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .title_card {
+    height: 100%;
+  }
+}
+
 .title_text-enter-from {
   opacity: 0;
 }
@@ -30,7 +42,6 @@ export default {
 }
 
 .title_card {
-  height: 100%;
   width: 100%;
   padding: 0px;
   margin: 0px 0px 0px 0px;

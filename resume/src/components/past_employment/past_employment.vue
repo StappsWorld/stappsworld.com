@@ -112,6 +112,31 @@ export default {
 </script>
 
 <style scoped>
+
+@media only screen and (max-width: 800px) {
+  .past_employment_empty {
+    height: 5vh;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .past_employment_section {
+    height: 80vh;
+  }
+
+  .past_employment_empty {
+    height: 20vh;
+  }
+
+  .past_employment_content {
+    display: inline-flex;
+  }
+
+  .content {
+    width: 33vw;
+  }
+}
+
 .past_employment_text-enter-from {
   opacity: 0;
 }
@@ -126,20 +151,10 @@ export default {
     var(--solid-background) 100%
   );
   margin: 0px 0px 0px 0px;
-  height: 80vh;
-}
-
-.past_employment_empty {
-  height: 20vh;
-}
-
-.past_employment_content {
-  display: inline-flex;
 }
 
 .content {
   text-align: center;
-  width: 33vw;
 }
 
 .work_list_item {
@@ -172,17 +187,7 @@ li {
   color: white;
 }
 
-h1 {
-  color: white;
-  font-family: "Monospace";
-}
-
-p {
-  color: white;
-  font-family: "Monospace";
-}
-
-a {
+h1, p, a {
   color: white;
   font-family: "Monospace";
 }

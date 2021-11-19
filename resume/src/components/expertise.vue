@@ -128,6 +128,32 @@ export default {
 </script>
 
 <style scoped>
+
+@media only screen and (max-width: 800px) {
+
+  .expertise_empty {
+    height: 5vh;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .expertise_empty {
+    height: 20vh;
+  }
+
+  .expertise_section {
+    height: 100vh;
+  }
+
+  .language_box {
+    height: 30vh;
+  }
+
+  .systems_box {
+    height: 30vh;
+  }
+}
+
 .expertise_text-enter-from {
   opacity: 0;
 }
@@ -139,25 +165,19 @@ export default {
 .expertise_section {
   background-color: var(--solid-background-soft);
   margin: 0px 0px 0px 0px;
-  height: 100vh;
 }
 
-.expertise_empty {
-  height: 20vh;
-}
 
 .language_box {
   display: inline-flex;
   justify-content: center;
   width: 100%;
-  height: 30vh;
 }
 
 .systems_box {
   display: inline-flex;
   justify-content: center;
   width: 100%;
-  height: 30vh;
 }
 
 .lhs {

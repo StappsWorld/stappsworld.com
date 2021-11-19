@@ -11,6 +11,7 @@
             v-for="project in proj_arr"
             :key="project.name"
             class="project_card"
+            data-aos="fade-up"
           >
             <a v-bind:href="project.url" target="_blank">{{ project.name }}</a>
             <hr />
@@ -48,7 +49,7 @@
         </div>
       </div>
     </transition>
-    <!-- <div class="projects_empty_space"></div> -->
+    <div class="projects_empty_space"></div>
   </div>
 </template>
 
@@ -73,6 +74,75 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (max-width: 800px) {
+  .projects_empty_space {
+    height: 5vh;
+  }
+
+  .project_cards {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+  }
+
+  .project_card_description {
+    height: 100%;
+    padding: 10px;
+  }
+
+  .project_card_dates {
+    padding: 10px;
+  }
+
+  .project_card_special_info {
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .projects_root {
+    height: 100vh;
+  }
+
+  .projects_empty_space {
+    height: 15vh;
+  }
+
+  .project_cards {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 60vh;
+  }
+
+  .project_card {
+    width: 20vw;
+  }
+
+  .project_card_description {
+    height: 60%;
+  }
+
+  .project_card_dates {
+    height: 15%;
+    padding: auto;
+  }
+
+  h1 {
+    font-size: 2vw;
+  }
+
+  a {
+    font-size: 1.2vw;
+  }
+
+  p {
+    font-size: 1vw;
+  }
+}
+
+
 .projects-enter-from {
   opacity: 0;
 }
@@ -83,11 +153,6 @@ export default {
 
 .projects_root {
   background-color: var(--solid-background);
-  height: 100vh;
-}
-
-.projects_empty_space {
-  height: 15vh;
 }
 
 ul {
@@ -95,24 +160,12 @@ ul {
   margin: auto;
 }
 
-.project_cards {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: 60vh;
-}
-
 .project_card {
   border: 1px solid white;
   text-align: center;
-  width: 20vw;
   margin: 5px;
   border-radius: 10px;
   height: 100%;
-}
-
-.project_card_description {
-  height: 60%;
 }
 
 .project_card_info {
@@ -135,15 +188,12 @@ ul {
 .project_card_dates {
   display: inline-flex;
   justify-content: space-between;
-  height: 15%;
-  padding: auto;
   margin: auto;
 }
 
 h1 {
   color: white;
   font-family: "Monospace";
-  font-size: 2vw;
   padding: auto;
   margin: auto;
 }
@@ -151,7 +201,6 @@ h1 {
 a {
   color: white;
   font-family: "Monospace";
-  font-size: 1.2vw;
   padding: auto;
   margin: auto;
 }
@@ -159,7 +208,6 @@ a {
 p {
   color: white;
   font-family: "Monospace";
-  font-size: 1vw;
   padding: auto;
   margin: auto;
 }

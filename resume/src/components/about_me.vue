@@ -21,7 +21,6 @@
         </div>
       </div>
     </transition>
-    <!-- <div class="about_me_empty"></div> -->
   </div>
 </template>
 
@@ -32,6 +31,69 @@ export default {
 </script>
 
 <style scoped>
+
+@media only screen and (max-width: 800px) {
+  .about_me_empty {
+    height: 5vh;
+  }
+
+  .profile_image {
+    width: 100vw;
+  }
+
+  .about_me_box {
+    text-align: center;
+    display: flexbox;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  img {
+    width: 80vw;
+  }
+
+  .profile_info {
+    width: 100vw;
+  }
+
+  p {
+    margin: 0 20%;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .about_me_empty {
+    height: 20%;
+  }
+
+  .about_me_section {
+    height: 100vh;
+  }
+
+  .profile_image {
+    width: 50vw;
+  }
+
+  .about_me_box {
+    height: 59%;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: 48vw;
+  }
+
+  .profile_info {
+    width: 49vw;
+  }
+
+  p {
+    font-size: 1.2vw;
+  }
+}
+
 .about_text-enter-from {
   opacity: 0;
 }
@@ -46,25 +108,9 @@ export default {
     var(--solid-background-soft) 100%
   );
   margin: 0px 0px 0px 0px;
-  height: 100vh;
-}
-
-.about_me_empty {
-  height: 20%;
-}
-
-.about_me_box {
-  height: 59%;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
-.profile_image {
-  width: 50vw;
 }
 
 img {
-  width: 48vw;
   display: block;
   margin: auto;
   border: 1px solid white;
@@ -72,7 +118,6 @@ img {
 
 .profile_info {
   text-align: center;
-  width: 49vw;
 }
 
 h1 {
@@ -85,6 +130,5 @@ p {
   color: white;
   font-family: "Monospace";
   padding: 20px;
-  font-size: 1.2vw;
 }
 </style>

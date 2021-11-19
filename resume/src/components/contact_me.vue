@@ -80,6 +80,43 @@ export default {
 </script>
 
 <style scoped>
+
+@media only screen and (max-width: 800px) {
+  .contact_me_empty {
+    height: 5vh;
+  }
+
+  .contact_me_upper {
+    height: 50vh;
+  }
+
+  svg, img {
+    padding: 0px 10px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contact_me_section {
+    height: 75vh;
+  }
+
+  .contact_me_empty {
+    height: 20vh;
+  }
+
+  .contact_me_upper {
+    height: 68vh;
+  }
+
+  .info_box {
+    width: 40vw;
+  }
+
+  .info_row {
+    width: 40%;
+  }
+}
+
 .contact_me_text-enter-from {
   opacity: 0;
 }
@@ -91,16 +128,10 @@ export default {
 .contact_me_section {
   background-color: var(--solid-background);
   margin: 0px 0px 0px 0px;
-  height: 75vh;
-}
-
-.contact_me_empty {
-  height: 20vh;
 }
 
 .contact_me_upper {
   width: 100%;
-  height: 68vh;
   padding: 0px;
   margin: 0px;
   display: inline-flex;
@@ -141,7 +172,6 @@ export default {
 }
 
 .info_box {
-  width: 40vw;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -158,7 +188,6 @@ export default {
 .info_row {
   display: inline-flex;
   justify-content: space-between;
-  width: 40%;
   padding: 20px;
 }
 
