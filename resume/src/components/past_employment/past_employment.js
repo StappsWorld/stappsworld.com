@@ -44,5 +44,5 @@ export const honors_arr = [
     "Co-Leader of the Tech Discussion Club",
     "Leader of the 1st place team at the 2016 Capital One Hacker-thon",
     "Winner of the VCU 2018 Hackathon",
-    "Apart of the winning team of the UMW 2019 Hackathon"
+    "A part of the winning team of the UMW 2019 Hackathon"
 ]

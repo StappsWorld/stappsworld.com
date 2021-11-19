@@ -34,7 +34,7 @@ export const proj_arr = [
         description: "<u><strong>A small API written for the RHS Mesial Project</u></strong> for a volunteer mentorship program at Riverbend Highschool in Fredericksburg, VA. I mentored students in this program. I contributed the code that interfaces with the Google Calendar API to request and parse calendar data to deduce the current block schedule and special events for a specific day.",
         loc: 1000,
         time_started: new Date('September 1, 2021 00:00:00'),
-        time_ended: null,
+        time_ended: new Date('October 1, 2021 00:00:00'),
     },
     {
         name: "RHS Mesial Dashboard",
@@ -43,7 +43,7 @@ export const proj_arr = [
         description: "<u><strong>The frontend of the RHS Mesial Project.</u></strong>. This project was written in Vue and displayed information requested from the RHS Mesial API such as the current block, current events, and even special notifications.",
         loc: 1000,
         time_started: new Date('September 1, 2021 00:00:00'),
-        time_ended: null,
+        time_ended: new Date('October 1, 2021 00:00:00'),
     },
     
 ]
