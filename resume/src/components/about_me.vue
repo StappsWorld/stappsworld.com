@@ -53,7 +53,7 @@ export default {
   }
 
   .profile_info {
-    width: 100vw;
+    width: 100%;
   }
 
   p {
@@ -62,13 +62,13 @@ export default {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   .about_me_empty {
     height: 20%;
   }
 
   .about_me_section {
-    height: 100vh;
+    height: 100%;
   }
 
   .profile_image {
@@ -81,12 +81,16 @@ export default {
     flex-wrap: wrap;
   }
 
+  .profile_image {
+    width: 50%;
+  }
+
   img {
-    width: 48vw;
+    width: 95%;
   }
 
   .profile_info {
-    width: 49vw;
+    width: 50%;
   }
 
   p {

@@ -100,7 +100,7 @@ export default {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   .projects_root {
     height: 100vh;
   }

@@ -25,11 +25,27 @@ export default {
   .title_card {
     height: 25%;
   }
+
+  .title_card_lower_space p {
+    font-size: 3vmax;
+  }
+
+  .title_card_name h1 {
+    font-size: 5vmax;
+  }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   .title_card {
     height: 100%;
+  }
+
+  .title_card_lower_space p {
+    font-size: 5vmax;
+  }
+
+  .title_card_name h1 {
+    font-size: 10vmax;
   }
 }
 
@@ -62,11 +78,10 @@ export default {
 }
 
 .title_card_name h1 {
-  padding: 10px;
+  padding: 0px 15px;
   margin: 0px 10px 0px var(--spacing-from-left);
   color: white;
   font-family: "Monospace";
-  font-size: 7.5vw;
 }
 
 .title_card_lower_space {
@@ -75,10 +90,9 @@ export default {
 }
 
 .title_card_lower_space p {
-  padding: 10px;
+  padding: 10px 15px;
   margin: 0px 10px 0px var(--spacing-from-left);
   color: white;
   font-family: "Monospace";
-  font-size: 5vw;
 }
 </style>

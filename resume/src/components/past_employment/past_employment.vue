@@ -115,17 +115,13 @@ export default {
 
 @media only screen and (max-width: 800px) {
   .past_employment_empty {
-    height: 5vh;
+    height: 5%;
   }
 }
 
-@media only screen and (min-width: 800px) {
-  .past_employment_section {
-    height: 80vh;
-  }
-
+@media only screen and (min-width: 801px) {
   .past_employment_empty {
-    height: 20vh;
+    height: 20%;
   }
 
   .past_employment_content {
@@ -133,7 +129,7 @@ export default {
   }
 
   .content {
-    width: 33vw;
+    width: 33%;
   }
 }
 

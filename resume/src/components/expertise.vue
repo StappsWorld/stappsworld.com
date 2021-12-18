@@ -136,21 +136,17 @@ export default {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 801px) {
   .expertise_empty {
     height: 20vh;
   }
 
-  .expertise_section {
-    height: 100vh;
-  }
-
   .language_box {
-    height: 30vh;
+    height: 30%;
   }
 
   .systems_box {
-    height: 30vh;
+    height: 30%;
   }
 }
 
