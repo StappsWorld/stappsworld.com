@@ -32,8 +32,9 @@
 				console.error(response);
 				if (Math.random() < 0.01) {
 					videos = ["r1tNmN-tXHk", "4eSXot_cvHk", "KmtMl_zr7nI", "qnbwk5muoBo", "no0s3d04bLI", "geMhBZGuM", "3SLZ7RX6FPM"]
+				} else {
+					videos = ["qnkuBUAwfe0", "J16lInLZRms", "9RZXaoaK8NI", "eX3ZSlKdsrM", "iBBqjGd3fHQ", "wu0VRsVCQ48", "oPzhUp8mWgs", "CFLXxqoapPY", "erFoLBcNyKI", "3k3jxi4JhXA"];
 				}
-				videos = ["qnkuBUAwfe0", "J16lInLZRms", "9RZXaoaK8NI", "eX3ZSlKdsrM", "iBBqjGd3fHQ", "wu0VRsVCQ48", "oPzhUp8mWgs", "CFLXxqoapPY", "erFoLBcNyKI", "3k3jxi4JhXA"];
 			})
 			.then(() => newSong());
 	});
