@@ -44,7 +44,7 @@ export const proj_arr = [
     url: "https://github.com/Riverbend-High-School/gabe_versus_gavin",
     tools: ["vue", "html", "js", "rust"],
     description:
-      "<u><strong>A small polling app for a mentor student.</u></strong>. This project was written in Vue and Rust. It allowed a student I mentored to create a poll for the morning news at his school. The students at the school could choose from 1-4 options that this student would create, the backend would record these votes, and the frontend would dynamically update to show the recults.",
+      "<u><strong>A small polling app for a mentored student</u></strong>. This project was written in Vue and Rust. It allowed a student I mentored to create a poll for the morning news at his school. The students at the school could choose from 1-4 options that this student would create, the backend would record these votes, and the frontend would dynamically update to show the results.",
     loc: 2000,
     time_started: new Date("March 1, 2022 00:00:00"),
     time_ended: null,
