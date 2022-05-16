@@ -10,11 +10,11 @@
           <h1>Get To Know Me</h1>
           <p>
             Hi there! My name is Samuel Rembisz and I'm a
-            <u><strong>software developer</strong></u>, 
-            <u><strong>computer repair technician</strong></u>, 
-            as well as a <u><strong>mathematician</strong></u> 
-            with 6 years of volunteer experience and 2 years of work experience. I'm
-            committed to efficiency in the workplace. Networking, software
+            <u><strong>software developer</strong></u
+            >, <u><strong>computer repair technician</strong></u
+            >, as well as a <u><strong>mathematician</strong></u>
+            with 6 years of volunteer experience and 2 years of work experience.
+            I'm committed to efficiency in the workplace. Networking, software
             architecture, software debugging, and general IT customer support
             and care are among my talents!
           </p>
@@ -31,7 +31,6 @@ export default {
 </script>
 
 <style scoped>
-
 @media only screen and (max-width: 800px) {
   .about_me_empty {
     height: 5vh;

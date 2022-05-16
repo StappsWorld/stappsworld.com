@@ -18,7 +18,9 @@
               <div class="work_left">
                 <div class="name">
                   <p>
-                    <a v-bind:href="employment.url" target="_blank">{{ employment.name }}</a>
+                    <a v-bind:href="employment.url" target="_blank">{{
+                      employment.name
+                    }}</a>
                   </p>
                 </div>
                 <div class="date">
@@ -112,7 +114,6 @@ export default {
 </script>
 
 <style scoped>
-
 @media only screen and (max-width: 800px) {
   .past_employment_empty {
     height: 5%;
@@ -183,7 +184,9 @@ li {
   color: white;
 }
 
-h1, p, a {
+h1,
+p,
+a {
   color: white;
   font-family: "Monospace";
 }

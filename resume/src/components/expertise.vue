@@ -23,12 +23,11 @@
               <li>
                 <p>
                   <img
-                    src="@/assets/language/java_logo.png"
-                    alt="Java"
+                    src="@/assets/language/c_logo.png"
                     width="32"
                     height="32"
                   />
-                  Java - <i class="text-muted">2/2015</i>
+                  C - <i class="text-muted">4/2021</i>
                 </p>
               </li>
               <li>
@@ -45,11 +44,12 @@
               <li>
                 <p>
                   <img
-                    src="@/assets/language/c_logo.png"
+                    src="@/assets/language/java_logo.png"
+                    alt="Java"
                     width="32"
                     height="32"
                   />
-                  C - <i class="text-muted">4/2021</i>
+                  Java - <i class="text-muted">2/2015</i>
                 </p>
               </li>
               <li>
@@ -59,7 +59,7 @@
                     width="32"
                     height="32"
                   />
-                  Win32 API C++ - <i class="text-muted">8/2014</i>
+                  C++ - <i class="text-muted">8/2014</i>
                 </p>
               </li>
               <li>
@@ -84,7 +84,8 @@
             <ul>
               <li>
                 <p>
-                  Implementation of efficient algorithms for manipulation and transfer of data
+                  Implementation of efficient algorithms for manipulation and
+                  transfer of data
                 </p>
               </li>
               <li>
@@ -101,8 +102,8 @@
               </li>
               <li>
                 <p>
-                  Programming automation tools to work around monotonous tasks that would otherwise
-                  take up precious time
+                  Programming automation tools to work around monotonous tasks
+                  that would otherwise take up precious time
                 </p>
               </li>
             </ul>
@@ -128,9 +129,7 @@ export default {
 </script>
 
 <style scoped>
-
 @media only screen and (max-width: 800px) {
-
   .expertise_empty {
     height: 5vh;
   }
@@ -163,7 +162,6 @@ export default {
   margin: 0px 0px 0px 0px;
 }
 
-
 .language_box {
   display: inline-flex;
   justify-content: center;
@@ -192,11 +190,12 @@ export default {
 .rhs {
   width: 50vw;
   border-left: 1px solid white;
-  display:flex; align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .rhs li {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 ul {

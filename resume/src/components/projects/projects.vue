@@ -18,16 +18,28 @@
             <div class="project_card_description">
               <p><span v-html="project.description"></span></p>
             </div>
-            <div class="project_card_dates">
-              <p v-if="project.time_started">
+            <div
+              class="project_card_dates"
+              v-if="
+                !project.time_ended ||
+                  (project.time_ended &&
+                    project.time_started.getTime() !==
+                      project.time_ended.getTime())
+              "
+            >
+              <p>
                 {{ dateFormat(project.time_started, "mmmm yyyy") }}
               </p>
-              <p v-else>Present</p>
               <p>-</p>
               <p v-if="project.time_ended">
                 {{ dateFormat(project.time_ended, "mmmm yyyy") }}
               </p>
               <p v-else>Present</p>
+            </div>
+            <div class="project_card_dates" v-else>
+              <p>
+                {{ dateFormat(project.time_started, "mmmm yyyy") }}
+              </p>
             </div>
             <div class="project_card_special_info">
               <div class="project_card_logos">
@@ -141,7 +153,6 @@ export default {
     font-size: 1vw;
   }
 }
-
 
 .projects-enter-from {
   opacity: 0;
