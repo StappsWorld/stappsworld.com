@@ -26,7 +26,7 @@ export const proj_arr = [
     description:
       "<u><strong>A library sign-in system</strong></u> for a mentored student written in Vue and Rust. It was developed the COVID-19 pandemic, and allowed the library staff to track students in the library. It also had data collection and exporting systems written in that allowed staff to both make sure students were where they said they were and to provide population data to school administration.",
     loc: 3000,
-    time_started: new Date("June 1, 2022 00:00:00"),
+    time_started: new Date("January 1, 2022 00:00:00"),
     time_ended: new Date("March 1, 2022 00:00:00"),
   },
   {
