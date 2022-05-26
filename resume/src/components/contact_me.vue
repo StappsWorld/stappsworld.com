@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class="contact_me_footer">
-          <a href="assets/resume.pdf" target="_blank">Download Resume</a>
+          <a :href="resume" target="_blank">Download Resume</a>
         </div>
       </div>
     </transition>
@@ -87,11 +87,16 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import resume from "@/assets/resume.pdf";
+
 export default {
   name: "contact_me",
   setup: () => {
     AOS.init();
   },
+  data: () => ({
+    resume,
+  }),
 };
 </script>
 
