@@ -27,11 +27,11 @@ export default {
   }
 
   .title_card_lower_space p {
-    font-size: 3vmax;
+    font-size: 1.8rem;
   }
 
   .title_card_name h1 {
-    font-size: 5vmax;
+    font-size: 2.5rem;
   }
 }
 
@@ -41,11 +41,11 @@ export default {
   }
 
   .title_card_lower_space p {
-    font-size: 5vmax;
+    font-size: 7rem;
   }
 
   .title_card_name h1 {
-    font-size: 10vmax;
+    font-size: 9rem;
   }
 }
 
@@ -65,6 +65,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  white-space: nowrap;
 }
 
 .title_card_upper_space {
