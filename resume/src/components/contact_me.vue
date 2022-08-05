@@ -110,6 +110,10 @@ export default {
     height: 50vh;
   }
 
+  .info_row {
+    padding: 10px;
+  }
+
   svg,
   img {
     padding: 0px 10px 0px 0px;
@@ -135,6 +139,7 @@ export default {
 
   .info_row {
     width: 40%;
+    padding: 20px;
   }
 }
 
@@ -209,7 +214,6 @@ export default {
 .info_row {
   display: inline-flex;
   justify-content: space-between;
-  padding: 20px;
   min-width: 86%;
 }
 
