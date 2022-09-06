@@ -15,15 +15,14 @@ export const employment_arr = [
   },
   {
     name: "uBreakiFix By Asurion",
-    url:
-      "https://www.ubreakifix.com/locations/fredericksburg?utm_campaign=fredericksburg",
+    url: "https://www.ubreakifix.com/locations/fredericksburg?utm_campaign=fredericksburg",
     role: "Computer and Phone Repair Technician",
     time_started: new Date("May 1, 2019 00:00:00"),
     time_ended: new Date("July 1, 2021 00:00:00"),
   },
   {
     name: "Riverbend Highschool CS/Math Department",
-    url: "https://www.spotsylvania.k12.va.us/Domain/35",
+    url: "https://www.spotsylvania.k12.va.us/o/riverbend",
     role: "Volunteer Mentor",
     time_started: new Date("Jan 1, 2018 00:00:00"),
     time_ended: null,
@@ -38,7 +37,7 @@ export const education_arr = [
     time_ended: new Date("May 1, 2024"),
   },
   {
-    establishment: "Riverbend Highschool",
+    establishment: "Riverbend High School",
     title: "Advanced High School Diploma",
     time_started: new Date("August 1, 2016"),
     time_ended: new Date("May 1, 2020"),
@@ -47,7 +46,7 @@ export const education_arr = [
 
 export const honors_arr = [
   "Dean's List Fall 2020",
-  "Vice President and Secretary of the Zeta Omicron National Computer Honors Society",
+  "Vice President and Secretary of the Zeta Omicron National Computer Honor Society",
   "Co-Leader of the Tech Discussion Club",
   "Leader of the 1st place team at the 2016 Capital One Hacker-thon",
   "Winner of the VCU 2018 Hackathon",
